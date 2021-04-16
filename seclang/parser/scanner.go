@@ -20,9 +20,7 @@ const (
 	EOS = -2
 )
 
-var escapes map[rune]rune = map[rune]rune{
-	'a': '\a', 'b': '\b', 'f': '\f', 'n': '\n', 'r': '\r', 't': '\t', 'v': '\v', '\\': '\\', '"': '"', '\'': '\'',
-}
+var escapes map[rune]rune = map[rune]rune{}
 
 var ErrEOS = errors.New("EOS")
 
